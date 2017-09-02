@@ -25,4 +25,5 @@ The scripts are created for my needs, it is not guaranteed to work with your set
 For interim RADIUS updates, setup a crontab with interim.php. 
 For archiving old log files, setup a crontab with archive.php, it will gzip every logfile older than 1 day and remove older than 365 days. 
 
-
+Additional Notes:
+- change the udp() with udp( ip(ip address) port(514)) in syslog-ng.conf
