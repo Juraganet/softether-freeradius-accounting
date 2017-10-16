@@ -20,7 +20,7 @@
 require_once("settings.php");
 require_once("functions.php");
 
-while( $input = readline() ) {
+while( $input = readline('') ) {
   $pid = pcntl_fork();
   if ($pid === -1) { die(); }
   elseif ($pid === 0) {
